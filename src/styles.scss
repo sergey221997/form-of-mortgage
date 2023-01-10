@@ -1,0 +1,82 @@
+@import 'my-component';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    background-image: url(./zdaniia_arhitektura_neboskreby_193787_2560x1600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    position: relative;
+    gap: 1rem;
+
+    @media(max-width:600px) {
+        padding: 2rem;
+    }
+
+    @media(max-width:600px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        background-color: white;
+        border-radius: .3rem;
+        opacity: .8;
+
+        .input {
+            padding: 1rem 2rem;
+            border-radius: .4rem;
+            opacity: default;
+            border: 2px solid #2680A6;
+        }
+    }
+
+    .button {
+        padding: 1rem;
+        background-color: #2680A6;
+        color: white;
+        text-align: center;
+        border-radius: .4rem;
+        opacity: .99;
+
+        &:hover {
+            background-color: #19556e;
+        }
+    }
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+    color: white;
+    text-align: center;
+
+    .red {
+        color: red;
+    }
+}
