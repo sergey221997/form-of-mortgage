@@ -13,12 +13,12 @@
     margin: auto;
 }
 
-.credit {
+.credit-calculator {
     background-image: url(./реклама/image4.png);
     background-size: cover;
     background-repeat: no-repeat;
 
-    .content {
+    &-wrapper {
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -48,7 +48,7 @@
                 max-width: 500px;
             }
 
-            .title {
+            .header {
                 font-size: 1.1rem;
                 color: #2680A6;
             }
