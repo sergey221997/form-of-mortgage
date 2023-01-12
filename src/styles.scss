@@ -48,18 +48,18 @@
                 max-width: 500px;
             }
 
-            .header {
+            &-header {
                 font-size: 1.1rem;
                 color: #2680A6;
             }
 
-            .form-input {
+            &-input {
                 padding: 1rem 2rem;
                 border-radius: .4rem;
                 border: none;
             }
 
-            .button {
+            &-button {
                 padding: 1rem;
                 background-color: #2680A6;
                 color: white;
@@ -92,7 +92,7 @@
             }
 
             @media(min-width:1500px) {
-                font-size: 4rem;
+                font-size: 3rem;
             }
         }
     }
