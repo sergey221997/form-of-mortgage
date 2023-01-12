@@ -13,70 +13,87 @@
     margin: auto;
 }
 
-.box {
-    background-image: url(./zdaniia_arhitektura_neboskreby_193787_2560x1600.jpg);
+.credit {
+    background-image: url(./реклама/image4.png);
     background-size: cover;
     background-repeat: no-repeat;
 
-
-}
-
-.content {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 3rem;
-    position: relative;
-    gap: 1rem;
-
-    @media(max-width:600px) {
-        padding: 2rem;
-    }
-
-    @media(max-width:600px) {
+    .content {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-    }
-
-    &-left {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
+        justify-content: space-around;
+        padding: 3rem;
+        position: relative;
         gap: 1rem;
-        background-color: white;
-        border-radius: .3rem;
-        opacity: .8;
 
-        .input {
-            padding: 1rem 2rem;
-            border-radius: .4rem;
-            opacity: default;
-            border: 2px solid #2680A6;
+        @media(max-width:600px) {
+            padding: 2rem;
         }
-    }
 
-    .button {
-        padding: 1rem;
-        background-color: #2680A6;
-        color: white;
-        text-align: center;
-        border-radius: .4rem;
-        opacity: .99;
-
-        &:hover {
-            background-color: #19556e;
+        @media(max-width:600px) {
+            display: flex;
+            flex-direction: column;
         }
-    }
-}
 
-.content-right {
-    display: flex;
-    align-items: center;
-    font-size: 3.2rem;
-    color: white;
-    text-align: center;
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 1rem;
+            background-color: #41332ca5;
+            border-radius: .3rem;
 
-    .red {
-        color: red;
+            @media(min-width:1500px) {
+                width: 30%;
+                max-width: 500px;
+            }
+
+            .title {
+                font-size: 1.1rem;
+                color: #2680A6;
+            }
+
+            .form-input {
+                padding: 1rem 2rem;
+                border-radius: .4rem;
+                border: none;
+            }
+
+            .button {
+                padding: 1rem;
+                background-color: #2680A6;
+                color: white;
+                text-align: center;
+                border-radius: .4rem;
+                opacity: .99;
+
+                &:hover {
+                    background-color: #19556e;
+                }
+            }
+
+        }
+
+        .information {
+            display: flex;
+            align-items: center;
+            font-size: 3.2rem;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgb(63, 62, 62);
+
+            .blue {
+                color: #2680A6;
+                font-weight: 600;
+            }
+
+            @media(max-width:600px) {
+                font-size: 1.9rem;
+            }
+
+            @media(min-width:1500px) {
+                font-size: 4rem;
+            }
+        }
     }
 }
